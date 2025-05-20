@@ -1,0 +1,113 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Đơn đặt hàng',
+                typeNamePlural: 'Đơn đặt hàng',
+                title: { type: #STANDARD, label: 'Đơn đặt hàng', value: '' } } }
+annotate entity ZMM_DDH with
+
+{
+  @UI.facet: [
+  {
+  id: 'Don_dat_hang',
+  purpose: #STANDARD,
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'Đơn đặt hàng',
+  position: 10
+  }]
+  @UI: {lineItem: [ { position: 10, label: 'Company Code' } ],
+    identification: [ { position: 10, label: 'Company Code' } ],
+      selectionField: [ { position: 20 } ] }
+  @EndUserText.label: 'Company Code'
+  CompanyCode;
+  @UI: {lineItem: [ { position: 20, label: 'Plant' } ],
+    identification: [ { position: 20, label: 'Plant' } ],
+      selectionField: [ { position: 30 } ]   }
+  @EndUserText.label: 'Plant'
+  Plant;
+  @UI: {lineItem: [ { position: 30, label: 'PO number' } ],
+    identification: [ { position: 30, label: 'PO number' } ],
+    selectionField: [ { position: 40 } ] }
+  @EndUserText.label: 'PO number'
+  PurchaseOrder;
+  @UI: {lineItem: [ { position: 40, label: 'Supplier' } ],
+    identification: [ { position: 40, label: 'Supplier' } ],
+    selectionField: [ { position: 50 } ]}
+  @EndUserText.label: 'Supplier'
+  Supplier;
+  @UI: {lineItem: [ { position: 50, label: 'Supplier Name' } ],
+    identification: [ { position: 50, label: 'Supplier Name' } ]
+      }
+  @EndUserText.label: 'Supplier Name'
+  SupplierName;
+  @UI: {lineItem: [ { position: 60, label: 'Purchasing Org' } ],
+    identification: [ { position: 60, label: 'Purchasing Org' } ],
+    selectionField: [ { position: 60 } ] }
+  @EndUserText.label: 'Purchasing Org'
+  PurchasingOrganization;
+  @UI: {lineItem: [ { position: 70, label: 'Purchasing Group' } ],
+    identification: [ { position: 70, label: 'Purchasing Group' } ]
+    ,selectionField: [ { position: 70 }]  }
+  @EndUserText.label: 'Purchasing Group'
+  PurchasingGroup;
+  @UI: {lineItem: [ { position: 80, label: 'PO date' } ],
+    identification: [ { position: 80, label: 'PO date' } ]
+      ,selectionField: [ { position: 80 } ]}
+  @EndUserText.label: 'PO date'
+  PurchaseOrderDate;
+  @UI: {lineItem: [ { position: 90, label: 'Created By' } ], identification: [ { position: 90,  label: 'Created By' } ]
+  }
+  @EndUserText.label: 'Created By'
+  CreatedByUserName;
+  @UI: {selectionField: [ { position: 90 } ] }
+  @EndUserText.label: 'Created By'
+  createdbyuser;
+  @UI: {lineItem: [ { position: 100, label: 'Created on' } ],
+    identification: [ { position: 100, label: 'Created on' } ] }
+  @EndUserText.label: 'Created on'
+  CreationDate;
+  @UI: {lineItem: [ { position: 110, label: 'Số lần in' } ],
+    identification: [ { position: 110, label: 'Số lần in' } ] }
+  @EndUserText.label: 'Số lần in'
+  Solanin;
+  @UI: {lineItem: [ { position: 120, label: 'Ngày in' } ],
+    identification: [ { position: 120, label: 'Ngày in' } ]  }
+  @EndUserText.label: 'Ngày in'
+  Datein;
+  @UI: {lineItem: [ { position: 130, label: 'PO Type' } ],
+    identification: [ { position: 130, label: 'PO Type' } ]  }
+  @EndUserText.label: 'PO Type'
+  PurchaseOrderType;
+  @UI: {lineItem: [ { position: 140, label: 'PO Type Name' } ],
+   identification: [ { position: 140, label: 'PO Type Name' } ] }
+  @EndUserText.label: 'PO Type Name'
+  POTypeName;
+  @UI: {lineItem: [ { position: 150, label: 'Mã hàng' } ],
+    identification: [ { position: 150, label: 'Mã hàng' } ] }
+  @EndUserText.label: 'Mã hàng'
+  Product;
+  @UI: {lineItem: [ { position: 160, label: 'Tên hàng' } ],
+    identification: [ { position: 160, label: 'Tên hàng' } ] }
+  @EndUserText.label: 'Tên hàng'
+  TenHang1;
+  @UI: {lineItem: [ { position: 170, label: 'Quantity' } ],
+    identification: [ { position: 170, label: 'Quantity' } ] }
+  @EndUserText.label: 'Quantity'
+  OrderQuantity;
+  @UI: {lineItem: [ { position: 180, label: 'Unit' } ],
+    identification: [ { position: 180, label: 'Unit' } ] }
+  @EndUserText.label: 'Unit'
+  Unit;
+  @UI: {lineItem: [ { position: 190, label: 'Địa chỉ giao hàng' } ],
+    identification: [ { position: 190, label: 'Địa chỉ giao hàng' } ] }
+  @EndUserText.label: 'Địa chỉ giao hàng'
+  DiachiGH;
+  @UI: {lineItem: [ { position: 200, label: 'Ngày giao hàng' } ],
+    identification: [ { position: 200, label: 'Ngày giao hàng' } ] }
+  @EndUserText.label: 'Ngày giao hàng'
+  NgayGiaohang;
+  @UI: {lineItem: [ { position: 210, label: 'Ngày duyệt PO' } ],
+    identification: [ { position: 210, label: 'Ngày duyệt PO' } ] }
+  @EndUserText.label: 'Ngày duyệt PO'
+  NgayduyetPO;
+
+}

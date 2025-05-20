@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Đơn đặt hàng",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zpkddh"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3C6126ADCC47DA9BC522B745263D32F41E97D634_TM",
+    "semanticObject": "ZMM01",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3C6126ADCC47DA9BC522B745263D32F41E97D634_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Đơn đặt hàng",
+        "subtitle": "ZMM01"
+      }
+    }
+  ]
+}

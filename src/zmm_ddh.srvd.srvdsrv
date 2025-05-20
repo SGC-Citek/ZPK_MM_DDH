@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Đơn đặt hàng'
+define service ZMM_DDH {
+  expose ZMM_DDH;
+}
